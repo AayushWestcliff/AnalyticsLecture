@@ -1,0 +1,77 @@
+{
+  "checks": {
+    "all_saved_typed_values_equal_independent_raw_projection": 149930,
+    "calendar_growth_and_covered_zero_vs_missing": true,
+    "columns": 22,
+    "covered_months": 36,
+    "customer_eligible_lines": 6811,
+    "customer_eligible_orders": 3387,
+    "excluded_customer_lines": 4,
+    "frozen_files_verified": 7,
+    "orders": 3388,
+    "population_bridges_exact": true,
+    "raw_conflict_orders": 2,
+    "retained_cross_end_ship_lines": 34,
+    "returns_distinct_order_denominators": true,
+    "rows": 6815,
+    "source_controls_and_segment_totals_exact": true,
+    "source_csv_manifest_preparation_script_hashes": true,
+    "source_hand_check_exact": true,
+    "weighted_ratios_and_category_overlap": true
+  },
+  "contract_id": "superstore-retail-v1",
+  "csv_sha256": "434ba08abf665b617294b188e38c0d0b8a86d0b3386d41eff8a42c15bc708de2",
+  "currency_iso_code": null,
+  "currency_label": "source monetary units",
+  "freeze_manifest_sha256": "c0b4d94d970212db7ceb78ad52ddf3657a4a79159c250a751700189c809cb098",
+  "input_sha256": {
+    "data/metadata/catalog-audit-2026-10-12/profiles.json": "bec8ceaee89a5c7a9f129839a4fdc0c575a10bf29e62a5ac407b2710404974be",
+    "data/metadata/catalog-audit-2026-10-12/source_manifest.json": "23704e9681094025d2e5603250d649e90fa4ec1a26702e391f6de0ada42fb82a",
+    "data/metadata/superstore/retail-v1/contract.json": "b8e55c530e5628eb618e5e4989e0f74f9ab9ac9b8d678b8395c6847fadb1aca3",
+    "data/metadata/superstore/retail-v1/dictionary.md": "965a048ec2f7930e640c2287d0e03ea6e4b78b911e42d469654bf3b961f9ca25",
+    "data/metadata/superstore/retail-v1/freeze.json": "c0b4d94d970212db7ceb78ad52ddf3657a4a79159c250a751700189c809cb098",
+    "data/metadata/superstore/retail-v1/metric_contract.md": "b67179ef758ec39e3b47ccc4d7f344f01d5169dcbf4453a14499bf69778cb079",
+    "data/metadata/superstore/retail-v1/preparation_spec.md": "ed704314bb7fd1b70a90f816f4f6628d2f0e24f45ba11a4467ad3cc8fd98151e",
+    "data/prepared/superstore/retail-v1/manifest.json": "1b662f9ec2628de3244d26c7f9152db56a38350a4eb9fb1ad9d9a46b999cc844",
+    "data/prepared/superstore/retail-v1/order_lines.csv": "434ba08abf665b617294b188e38c0d0b8a86d0b3386d41eff8a42c15bc708de2",
+    "data/prepared/superstore/retail-v1/preparation_report.json": "b0922f092d3447fa33122f9a7c286f20e0e2a02230d5298ae4708a50ac121f11",
+    "data/raw/eu-superstore/2026-10-12/sample_-_superstore.xls": "5045ed4fec49cae2cc0dfc5ab0d204ba09efa767fe00c996822499e8cc42fbbd",
+    "instructor/solutions/superstore/retail-v1/preparation_exceptions.json": "c69e7d37f230cbd40774d0599c8283f98c00f21e3190dd37706c57355d243b16",
+    "instructor/source-audit/catalog-2026-10-12-controls.json": "c7bdf3a44e97b650c3f262eea0b6cb07bb1953db9971acd0a3a09f638af25005",
+    "instructor/source-audit/retail-contract-fixtures.json": "d6a4d4a2f1978b56ac0c47d3c8b35d9fe7cc1a5390eb499642f8bb3a5ff6aa58",
+    "instructor/source-audit/retail-hand-check.md": "9d83eaf3755fb556ff6b7eeafc723913ae8f55be7193d8a5f25cdc2cf82a948c",
+    "planning/RETAIL_CONTRACT_REVIEW.md": "d023a02b2b883f9f7933f5e4523588c570f68059cf0c136e1819f0595d10cc45",
+    "scripts/check_retail_contract.py": "b69fb0518cfaebdc44f6e6441dc9e5e22872655e2eda4addac318088dbf06c1a",
+    "scripts/prepare_retail.py": "d733c1cb992a3b82cf66f0cd80c407b82eaeabf58b808ea510db79b20088dfe2",
+    "scripts/validate_retail.py": "6b0b008c3cdec4227657327264cb2a18a046625cabccd3591950603f40d0c4f3"
+  },
+  "limits": [
+    "No Tableau/UI/visual/filter execution; no prepared workbook",
+    "No source-formula recalculation or upstream truth audit",
+    "No public/teaching release or redistributed-source permission",
+    "Rights and currency/accounting semantics remain separately qualified"
+  ],
+  "numeric_validation_only": true,
+  "prepared_manifest_sha256": "1b662f9ec2628de3244d26c7f9152db56a38350a4eb9fb1ad9d9a46b999cc844",
+  "publication_approved": false,
+  "reference_answers": {
+    "bytes": 1353482,
+    "path": "instructor/solutions/superstore/retail-v1/reference_answers.json",
+    "sha256": "96c35dcf8449386fae5f4978bc86a23966594d1ddda51feb4d93eee046d1c929"
+  },
+  "report_self_hash": "Not embedded; verify externally to avoid circularity",
+  "runtime": {
+    "decimal_precision": 60,
+    "pandas": "2.2.3",
+    "python": "3.12.14",
+    "xlrd": "2.0.2"
+  },
+  "source_sha256": "5045ed4fec49cae2cc0dfc5ab0d204ba09efa767fe00c996822499e8cc42fbbd",
+  "status": "PASS_NUMERICAL_ONLY",
+  "tableau_verified": false,
+  "validator": {
+    "path": "scripts/validate_retail.py",
+    "sha256": "6b0b008c3cdec4227657327264cb2a18a046625cabccd3591950603f40d0c4f3"
+  },
+  "version": "retail-v1"
+}

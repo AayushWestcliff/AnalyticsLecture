@@ -1,0 +1,327 @@
+{
+  "scope": "Source inspection controls, not released lesson answers; no Tableau cross-check",
+  "environment": {
+    "python": "3.12.14",
+    "pandas": "2.2.3",
+    "openpyxl": "3.1.5",
+    "xlrd": "2.0.2"
+  },
+  "sources": {
+    "eu-superstore": {
+      "all_source_rows": {
+        "rows": 10194,
+        "orders": 5111,
+        "reported_sales": "2326534.35430000002494385",
+        "reported_profit": "292296.81459999993498721",
+        "quantity": 38654,
+        "returned_orders_flagged": 296,
+        "segments": {
+          "Consumer": {
+            "rows": 5281,
+            "orders": 2628,
+            "reported_sales": "1170659.78700000001329615",
+            "reported_profit": "136371.44629999996450041"
+          },
+          "Corporate": {
+            "rows": 3090,
+            "orders": 1552,
+            "reported_sales": "715806.1348000000034731",
+            "reported_profit": "94249.63999999998361606"
+          },
+          "Home Office": {
+            "rows": 1823,
+            "orders": 931,
+            "reported_sales": "440068.4325000000081746",
+            "reported_profit": "61675.72829999998687074"
+          }
+        }
+      },
+      "proposed_complete_years_2023_2025": {
+        "rows": 6815,
+        "orders": 3388,
+        "reported_sales": "1580966.8231000000151056",
+        "reported_profit": "196370.46699999995231820",
+        "quantity": 25917,
+        "returned_orders_flagged": 191,
+        "segments": {
+          "Consumer": {
+            "rows": 3586,
+            "orders": 1738,
+            "reported_sales": "835747.8611000000075763",
+            "reported_profit": "90101.16609999997104743"
+          },
+          "Corporate": {
+            "rows": 2084,
+            "orders": 1044,
+            "reported_sales": "467562.0164000000021381",
+            "reported_profit": "65842.37959999998916305"
+          },
+          "Home Office": {
+            "rows": 1145,
+            "orders": 606,
+            "reported_sales": "277656.9456000000053912",
+            "reported_profit": "40426.92129999999210772"
+          }
+        }
+      }
+    },
+    "world-cup-results": {
+      "after_exact_dedup_by_year": [
+        {
+          "Year": 1930,
+          "matches": 18,
+          "home_goals": 59,
+          "away_goals": 11,
+          "MatchesPlayed": 18,
+          "GoalsScored": 70,
+          "match_count_residual": 0,
+          "goal_total_residual": 0
+        },
+        {
+          "Year": 1934,
+          "matches": 17,
+          "home_goals": 48,
+          "away_goals": 22,
+          "MatchesPlayed": 17,
+          "GoalsScored": 70,
+          "match_count_residual": 0,
+          "goal_total_residual": 0
+        },
+        {
+          "Year": 1938,
+          "matches": 18,
+          "home_goals": 61,
+          "away_goals": 23,
+          "MatchesPlayed": 18,
+          "GoalsScored": 84,
+          "match_count_residual": 0,
+          "goal_total_residual": 0
+        },
+        {
+          "Year": 1950,
+          "matches": 22,
+          "home_goals": 69,
+          "away_goals": 19,
+          "MatchesPlayed": 22,
+          "GoalsScored": 88,
+          "match_count_residual": 0,
+          "goal_total_residual": 0
+        },
+        {
+          "Year": 1954,
+          "matches": 26,
+          "home_goals": 109,
+          "away_goals": 31,
+          "MatchesPlayed": 26,
+          "GoalsScored": 140,
+          "match_count_residual": 0,
+          "goal_total_residual": 0
+        },
+        {
+          "Year": 1958,
+          "matches": 35,
+          "home_goals": 88,
+          "away_goals": 38,
+          "MatchesPlayed": 35,
+          "GoalsScored": 126,
+          "match_count_residual": 0,
+          "goal_total_residual": 0
+        },
+        {
+          "Year": 1962,
+          "matches": 32,
+          "home_goals": 69,
+          "away_goals": 20,
+          "MatchesPlayed": 32,
+          "GoalsScored": 89,
+          "match_count_residual": 0,
+          "goal_total_residual": 0
+        },
+        {
+          "Year": 1966,
+          "matches": 32,
+          "home_goals": 69,
+          "away_goals": 20,
+          "MatchesPlayed": 32,
+          "GoalsScored": 89,
+          "match_count_residual": 0,
+          "goal_total_residual": 0
+        },
+        {
+          "Year": 1970,
+          "matches": 32,
+          "home_goals": 72,
+          "away_goals": 23,
+          "MatchesPlayed": 32,
+          "GoalsScored": 95,
+          "match_count_residual": 0,
+          "goal_total_residual": 0
+        },
+        {
+          "Year": 1974,
+          "matches": 38,
+          "home_goals": 51,
+          "away_goals": 46,
+          "MatchesPlayed": 38,
+          "GoalsScored": 97,
+          "match_count_residual": 0,
+          "goal_total_residual": 0
+        },
+        {
+          "Year": 1978,
+          "matches": 38,
+          "home_goals": 79,
+          "away_goals": 23,
+          "MatchesPlayed": 38,
+          "GoalsScored": 102,
+          "match_count_residual": 0,
+          "goal_total_residual": 0
+        },
+        {
+          "Year": 1982,
+          "matches": 52,
+          "home_goals": 97,
+          "away_goals": 49,
+          "MatchesPlayed": 52,
+          "GoalsScored": 146,
+          "match_count_residual": 0,
+          "goal_total_residual": 0
+        },
+        {
+          "Year": 1986,
+          "matches": 52,
+          "home_goals": 74,
+          "away_goals": 58,
+          "MatchesPlayed": 52,
+          "GoalsScored": 132,
+          "match_count_residual": 0,
+          "goal_total_residual": 0
+        },
+        {
+          "Year": 1990,
+          "matches": 52,
+          "home_goals": 67,
+          "away_goals": 48,
+          "MatchesPlayed": 52,
+          "GoalsScored": 115,
+          "match_count_residual": 0,
+          "goal_total_residual": 0
+        },
+        {
+          "Year": 1994,
+          "matches": 52,
+          "home_goals": 83,
+          "away_goals": 58,
+          "MatchesPlayed": 52,
+          "GoalsScored": 141,
+          "match_count_residual": 0,
+          "goal_total_residual": 0
+        },
+        {
+          "Year": 1998,
+          "matches": 64,
+          "home_goals": 98,
+          "away_goals": 73,
+          "MatchesPlayed": 64,
+          "GoalsScored": 171,
+          "match_count_residual": 0,
+          "goal_total_residual": 0
+        },
+        {
+          "Year": 2002,
+          "matches": 64,
+          "home_goals": 89,
+          "away_goals": 72,
+          "MatchesPlayed": 64,
+          "GoalsScored": 161,
+          "match_count_residual": 0,
+          "goal_total_residual": 0
+        },
+        {
+          "Year": 2006,
+          "matches": 64,
+          "home_goals": 86,
+          "away_goals": 61,
+          "MatchesPlayed": 64,
+          "GoalsScored": 147,
+          "match_count_residual": 0,
+          "goal_total_residual": 0
+        },
+        {
+          "Year": 2010,
+          "matches": 64,
+          "home_goals": 76,
+          "away_goals": 69,
+          "MatchesPlayed": 64,
+          "GoalsScored": 145,
+          "match_count_residual": 0,
+          "goal_total_residual": 0
+        },
+        {
+          "Year": 2014,
+          "matches": 64,
+          "home_goals": 81,
+          "away_goals": 90,
+          "MatchesPlayed": 64,
+          "GoalsScored": 171,
+          "match_count_residual": 0,
+          "goal_total_residual": 0
+        }
+      ]
+    },
+    "mobile-os-usage": {
+      "dated_periods_only": {
+        "2008-12-01": {
+          "rows": 26,
+          "sum_percentage_points": 100.0
+        },
+        "2009-01-01": {
+          "rows": 26,
+          "sum_percentage_points": 100.0
+        },
+        "2009-02-01": {
+          "rows": 26,
+          "sum_percentage_points": 100.01
+        },
+        "2009-03-01": {
+          "rows": 26,
+          "sum_percentage_points": 99.99
+        },
+        "2009-04-01": {
+          "rows": 22,
+          "sum_percentage_points": 99.17
+        }
+      }
+    },
+    "us-construction": {
+      "proposed_unadjusted_monthly_total": {
+        "rows": 177,
+        "sum_million_dollars": "14476334.0",
+        "first_five": [
+          {
+            "per_name": "2002-01-01",
+            "val": 59516.0
+          },
+          {
+            "per_name": "2002-02-01",
+            "val": 58588.0
+          },
+          {
+            "per_name": "2002-03-01",
+            "val": 63782.0
+          },
+          {
+            "per_name": "2002-04-01",
+            "val": 69504.0
+          },
+          {
+            "per_name": "2002-05-01",
+            "val": 73384.0
+          }
+        ]
+      },
+      "ownership_residual_max_abs": 1.0,
+      "type_residual_max_abs": 1.0
+    }
+  }
+}

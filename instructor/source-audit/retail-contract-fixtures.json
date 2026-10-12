@@ -1,0 +1,53 @@
+{
+  "purpose": "D01 hand-designed synthetic arithmetic and population fixtures; no actual source records, no learner release",
+  "contract_id": "superstore-retail-v1",
+  "synthetic": true,
+  "core_rows": [
+    {"row_id": 1, "order_id": "TEST-1", "customer_id": "TEST-C1", "segment": "Consumer", "category": "A", "sales": "100", "profit": "20", "quantity": 1, "returned_order_flag": 1},
+    {"row_id": 2, "order_id": "TEST-1", "customer_id": "TEST-C1", "segment": "Consumer", "category": "B", "sales": "300", "profit": "-30", "quantity": 3, "returned_order_flag": 1},
+    {"row_id": 3, "order_id": "TEST-2", "customer_id": "TEST-C2", "segment": "Corporate", "category": "A", "sales": "100", "profit": "50", "quantity": 1, "returned_order_flag": 0}
+  ],
+  "core_expected": {"lines": 3, "orders": 2, "sales": "500", "profit": "40", "units": 5, "aov": "250", "profit_ratio": "0.08", "returned_orders": 1, "return_list_share": "0.5"},
+  "trap_expectations": {"mean_line_profit_ratio": "0.2", "sum_category_distinct_orders": 3, "sum_line_return_flags": 2},
+  "zero_sales_rows": [
+    {"row_id": 4, "order_id": "TEST-ZERO", "customer_id": "TEST-C3", "segment": "Consumer", "category": "A", "sales": "0", "profit": "5", "quantity": 1, "returned_order_flag": 0}
+  ],
+  "zero_sales_expected": {"lines": 1, "orders": 1, "sales": "0", "profit": "5", "units": 1, "aov": "0", "profit_ratio": null, "returned_orders": 0, "return_list_share": "0"},
+  "empty_expected": {"lines": 0, "orders": 0, "sales": "0", "profit": "0", "units": 0, "aov": null, "profit_ratio": null, "returned_orders": 0, "return_list_share": null},
+  "customer_rows": [
+    {"row_id": 10, "order_id": "TEST-CONFLICT", "customer_id": "TEST-A", "sales": "10"},
+    {"row_id": 11, "order_id": "TEST-CONFLICT", "customer_id": "TEST-B", "sales": "20"},
+    {"row_id": 12, "order_id": "TEST-ELIGIBLE", "customer_id": "TEST-C", "sales": "40"}
+  ],
+  "customer_expected": {"primary_lines": 3, "primary_sales": "70", "conflicting_orders": ["TEST-CONFLICT"], "eligible_lines": 1, "eligible_orders": 1, "eligible_sales": "40", "excluded_lines": 2, "excluded_orders": 1, "excluded_sales": "30"},
+  "date_rows": [
+    {"row_id": 20, "order_date": "2022-12-31", "ship_date": "2023-01-02"},
+    {"row_id": 21, "order_date": "2023-01-01", "ship_date": "2023-01-03"},
+    {"row_id": 22, "order_date": "2025-12-31", "ship_date": "2026-01-02"},
+    {"row_id": 23, "order_date": "2026-01-01", "ship_date": "2026-01-03"}
+  ],
+  "date_expected": {"included_row_ids": [21, 22], "dispatch_days": [2, 2]},
+  "monthly_rows": [
+    {"month": "2023-01-01", "sales": "100"},
+    {"month": "2023-03-01", "sales": "150"},
+    {"month": "2023-04-01", "sales": "0"},
+    {"month": "2023-05-01", "sales": "50"},
+    {"month": "2024-01-01", "sales": "120"}
+  ],
+  "monthly_expectations": [
+    {"month": "2023-01-01", "months_back": 1, "growth": null},
+    {"month": "2023-03-01", "months_back": 1, "growth": null},
+    {"month": "2023-04-01", "months_back": 1, "growth": "-1"},
+    {"month": "2023-05-01", "months_back": 1, "growth": null},
+    {"month": "2024-01-01", "months_back": 12, "growth": "0.2"}
+  ],
+  "monthly_fixture_note": "This deliberately sparse map represents available comparator values, not a complete release date spine. March must not compare to January merely because February is absent. A missing overall month in the actual source-derived release would fail validation.",
+  "covered_month_fixture": {
+    "coverage_basis": "All-source calendar coverage verified before selecting a group; February has no selected lines",
+    "covered_months": ["2023-01-01", "2023-02-01", "2023-03-01"],
+    "selected_line_sales": [{"month": "2023-01-01", "sales": "100"}, {"month": "2023-03-01", "sales": "150"}],
+    "expected_month_sales": {"2023-01-01": "100", "2023-02-01": "0", "2023-03-01": "150"},
+    "expected_growth": {"2023-01-01": null, "2023-02-01": "-1", "2023-03-01": null},
+    "unavailable_outside_coverage": "2022-12-01"
+  }
+}

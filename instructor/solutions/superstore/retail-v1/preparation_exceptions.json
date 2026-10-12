@@ -1,0 +1,163 @@
+{
+  "conflicting_orders_all_raw": {
+    "CA-2025-121465": [
+      {
+        "customer_analysis_eligible": 0,
+        "customer_id": "HO-15234",
+        "customer_order_conflict": 1,
+        "in_primary_scope": true,
+        "order_date": "2025-06-12",
+        "order_id": "CA-2025-121465",
+        "profit": "54.86130000000001",
+        "quantity": 3,
+        "row_id": 5010,
+        "sales": "140.67000000000002",
+        "ship_date": "2025-06-17"
+      },
+      {
+        "customer_analysis_eligible": 0,
+        "customer_id": "HO-15233",
+        "customer_order_conflict": 1,
+        "in_primary_scope": true,
+        "order_date": "2025-06-12",
+        "order_id": "CA-2025-121465",
+        "profit": "6.887999999999998",
+        "quantity": 5,
+        "row_id": 5011,
+        "sales": "19.68",
+        "ship_date": "2025-06-17"
+      },
+      {
+        "customer_analysis_eligible": 0,
+        "customer_id": "HO-15232",
+        "customer_order_conflict": 1,
+        "in_primary_scope": true,
+        "order_date": "2025-06-12",
+        "order_id": "CA-2025-121465",
+        "profit": "22.900799999999997",
+        "quantity": 6,
+        "row_id": 5012,
+        "sales": "70.464",
+        "ship_date": "2025-06-17"
+      },
+      {
+        "customer_analysis_eligible": 0,
+        "customer_id": "HO-15231",
+        "customer_order_conflict": 1,
+        "in_primary_scope": true,
+        "order_date": "2025-06-12",
+        "order_id": "CA-2025-121465",
+        "profit": "80.6312",
+        "quantity": 2,
+        "row_id": 5013,
+        "sales": "310.12",
+        "ship_date": "2025-06-17"
+      }
+    ],
+    "CA-2026-130494": [
+      {
+        "customer_analysis_eligible": 0,
+        "customer_id": "HO-15234",
+        "customer_order_conflict": 1,
+        "in_primary_scope": false,
+        "order_date": "2026-03-16",
+        "order_id": "CA-2026-130494",
+        "profit": "54.86130000000001",
+        "quantity": 3,
+        "row_id": 7192,
+        "sales": "140.67000000000002",
+        "ship_date": "2026-03-21"
+      },
+      {
+        "customer_analysis_eligible": 0,
+        "customer_id": "HO-15233",
+        "customer_order_conflict": 1,
+        "in_primary_scope": false,
+        "order_date": "2026-03-16",
+        "order_id": "CA-2026-130494",
+        "profit": "6.887999999999998",
+        "quantity": 5,
+        "row_id": 7193,
+        "sales": "19.68",
+        "ship_date": "2026-03-21"
+      },
+      {
+        "customer_analysis_eligible": 0,
+        "customer_id": "HO-15232",
+        "customer_order_conflict": 1,
+        "in_primary_scope": false,
+        "order_date": "2026-03-16",
+        "order_id": "CA-2026-130494",
+        "profit": "22.900799999999997",
+        "quantity": 6,
+        "row_id": 7194,
+        "sales": "70.464",
+        "ship_date": "2026-03-21"
+      },
+      {
+        "customer_analysis_eligible": 0,
+        "customer_id": "HO-15231",
+        "customer_order_conflict": 1,
+        "in_primary_scope": false,
+        "order_date": "2026-03-16",
+        "order_id": "CA-2026-130494",
+        "profit": "80.6312",
+        "quantity": 2,
+        "row_id": 7195,
+        "sales": "310.12",
+        "ship_date": "2026-03-21"
+      }
+    ]
+  },
+  "contract_date": "2026-10-12",
+  "contract_id": "superstore-retail-v1",
+  "currency_label": "source monetary units",
+  "exact_bridges": {
+    "all_raw_equals_primary_plus_outside": true,
+    "primary_equals_customer_eligible_plus_conflict": true
+  },
+  "populations": {
+    "all_raw": {
+      "customer_ids": 804,
+      "lines": 10194,
+      "orders": 5111,
+      "profit": "292296.81459999993498721",
+      "quantity": 38654,
+      "sales": "2326534.35430000002494385"
+    },
+    "customer_conflict_excluded_from_customer_view": {
+      "customer_ids": 4,
+      "lines": 4,
+      "orders": 1,
+      "profit": "165.281300000000005",
+      "quantity": 16,
+      "sales": "540.93400000000002"
+    },
+    "customer_eligible": {
+      "customer_ids": 789,
+      "lines": 6811,
+      "orders": 3387,
+      "profit": "196205.18569999995231320",
+      "quantity": 25901,
+      "sales": "1580425.8891000000150856"
+    },
+    "outside_date_scope": {
+      "customer_ids": 704,
+      "lines": 3379,
+      "orders": 1723,
+      "profit": "95926.34759999998266901",
+      "quantity": 12737,
+      "sales": "745567.53120000000983825"
+    },
+    "primary_scope": {
+      "customer_ids": 793,
+      "lines": 6815,
+      "orders": 3388,
+      "profit": "196370.46699999995231820",
+      "quantity": 25917,
+      "sales": "1580966.8231000000151056"
+    }
+  },
+  "publication_approved": false,
+  "purpose": "Private preparation exceptions and population bridges; not released lesson answers"
+}
