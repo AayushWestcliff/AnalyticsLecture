@@ -10,6 +10,8 @@ This directory contains private teaching guidance and solutions. It is outside t
 
 `solutions/superstore/retail-v1/` contains D02 private exceptions, D03 `reference_answers.json` and `numerical_validation.json`. The independent validator compares every saved typed value against a separate source read and produces whole/eligible/excluded bridges, Segment/Region/Category/month metrics and calendar growth references. Numerical checks passed; Tableau worksheet/filter/grand-total/zero-case and local save/reopen checks remain incomplete. This is development evidence, not an approved teaching answer pack. See `planning/CLAUDE_TAKEOVER.md` and `data/README.md` for exact commands/version/limits. Keep these files outside learner materials and public archives.
 
+`sessions/class-01-02/teaching-notes.md` holds draft private facilitation notes, expected values (cited to reference-answer keys) and a rehearsal checklist for the Class 1–2 learner drafts. Not yet rehearsed in Tableau.
+
 ## Future solution pack structure
 
 For each produced lesson, create a directory named for the curriculum session and case, with these components:
